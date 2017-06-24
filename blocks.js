@@ -1,6 +1,6 @@
 /**
 
-@module Ethereum:blocks
+@module Nekonium:blocks
 */
 
 

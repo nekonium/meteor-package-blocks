@@ -50,6 +50,7 @@ Start looking for new blocks
 @method init
 */
 EthBlocks.init = function(){
+    var web3=nekonium.web3;
     if(typeof web3 === 'undefined') {
         console.warn('EthBlocks couldn\'t find web3, please make sure to instantiate a web3 object before calling EthBlocks.init()');
         return;
@@ -98,6 +99,7 @@ Update the block info and adds additional properties.
 @param {Object} block
 */
 function updateBlock(block){
+    var web3=nekonium.web3;
 
     // reset the chain, if the current blocknumber is 100 blocks less 
     if(block.number + 10 < EthBlocks.latest.number)
@@ -121,6 +123,7 @@ Additionally cap the collection to 50 blocks
 @method observeLatestBlocks
 */
 function observeLatestBlocks(){
+    var web3=nekonium.web3;
 
     // get the latest block immediately
     web3.eth.getBlock('latest', function(e, block){
@@ -140,6 +143,8 @@ The observeLatestBlocks callback used in the block filter.
 @method checkLatestBlocks
 */
 var checkLatestBlocks = function(e, hash){
+    var web3=nekonium.web3;
+    
     if(!e) {
         web3.eth.getBlock(hash, function(e, block){
             if(!e) {

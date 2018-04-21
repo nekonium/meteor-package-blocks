@@ -1,7 +1,7 @@
 Package.describe({
   name: 'nekonium:blocks',
   summary: 'Provides informations about the current and last 50 blocks',
-  version: '0.3.2',
+  version: '0.3.3',
   git: 'http://github.com/nekonium/meteor-package-blocks'
 });
 
@@ -11,7 +11,7 @@ Package.onUse(function(api) {
   api.use('mongo', ['client', 'server']);
 
   // api.use('frozeman:persistent-minimongo@0.1.3', 'client');
-  api.use('nekonium:web3@0.20.2', ['client', 'server']);
+  api.use('nekonium:web3@0.20.604', ['client', 'server']);
 
   api.export(['EthBlocks'], ['client', 'server']);
 

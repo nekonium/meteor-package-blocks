@@ -28,7 +28,7 @@ modules-runtime@0.9.1
 mongo@1.4.2
 mongo-dev-server@1.1.0
 mongo-id@1.0.6
-nekonium:blocks@0.3.3
+nekonium:blocks@0.3.4
 nekonium:web3@0.20.604
 npm-mongo@2.2.33
 ordered-dict@1.1.0

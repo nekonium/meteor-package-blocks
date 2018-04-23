@@ -1,7 +1,7 @@
 Package.describe({
   name: 'nekonium:blocks',
   summary: 'Provides informations about the current and last 50 blocks',
-  version: '0.3.3',
+  version: '0.3.4',
   git: 'http://github.com/nekonium/meteor-package-blocks'
 });
 

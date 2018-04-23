@@ -1,3 +1,12 @@
+# Nekonium:Ethereum blocks
+Forked from Ethereum blocks.
+
+Difference from Ethereum blocks.
+
+- Update web3 library to nekonium web3.
+- Change the namespace of web3 to nekonium/web3. (0.3.3)
+- Change Collection name to nekonium_blocks (0.3.4)
+
 # Ethereum blocks
 
 Provides you with an `EthBlocks` collection, which stores the last 50 blocks.
